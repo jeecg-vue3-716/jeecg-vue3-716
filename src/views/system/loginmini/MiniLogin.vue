@@ -2,34 +2,34 @@
   <div :class="prefixCls" class="login-background-img">
     <AppLocalePicker class="absolute top-4 right-4 enter-x xl:text-gray-600" :showText="false"/>
     <AppDarkModeToggle class="absolute top-3 right-7 enter-x" />
-    <div class="aui-logo" v-if="!getIsMobile">
+    <!-- <div class="aui-logo" v-if="!getIsMobile">
       <div>
         <h3>
           <img :src="logoImg" alt="jeecg" />
         </h3>
       </div>
-    </div>
-    <div v-else class="aui-phone-logo">
+    </div> -->
+    <!-- <div v-else class="aui-phone-logo">
       <img :src="logoImg" alt="jeecg" />
-    </div>
+    </div> -->
     <div v-show="type === 'login'">
       <div class="aui-content">
         <div class="aui-container">
           <div class="aui-form">
-            <div class="aui-image">
+            <!-- <div class="aui-image">
               <div class="aui-image-text">
                 <img :src="adTextImg" />
               </div>
-            </div>
+            </div> -->
             <div class="aui-formBox">
               <div class="aui-formWell">
                 <div class="aui-flex aui-form-nav investment_title">
                   <div class="aui-flex-box" :class="activeIndex === 'accountLogin' ? 'activeNav on' : ''" @click="loginClick('accountLogin')"
                     >{{ t('sys.login.signInFormTitle') }}
                   </div>
-                  <div class="aui-flex-box" :class="activeIndex === 'phoneLogin' ? 'activeNav on' : ''" @click="loginClick('phoneLogin')"
+                  <!-- <div class="aui-flex-box" :class="activeIndex === 'phoneLogin' ? 'activeNav on' : ''" @click="loginClick('phoneLogin')"
                     >{{ t('sys.login.mobileSignInFormTitle') }}
-                  </div>
+                  </div> -->
                 </div>
                 <div class="aui-form-box" style="height: 180px">
                   <a-form ref="loginRef" :model="formData" v-if="activeIndex === 'accountLogin'" @keyup.enter.native="loginHandleClick">
