@@ -16,7 +16,7 @@ JeecgBoot-Vue3采用 Vue3.0、Vite、 Ant-Design-Vue3、TypeScript 等新技术�
 是采用Vben实现的 JeecgBoot低代码平台的全新vue3版本。
  
 > 强大的代码生成器让前后端代码一键生成! JeecgBoot引领低代码开发模式(OnlineCoding-> 代码生成-> 手工MERGE)， 帮助解决Java项目70%的重复工作，让开发更多关注业务。既能快速提高效率，节省成本，同时又不失灵活性
-
+从v鬼地方高浮雕
 ## 技术支持
 
 关闭Gitee的issue通道，使用中遇到问题或者BUG可以在 [Github上提Issues](https://github.com/jeecgboot/jeecgboot-vue3/issues/new)
