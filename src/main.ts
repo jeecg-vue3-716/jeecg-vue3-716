@@ -16,7 +16,9 @@ import { registerThirdComp } from '/@/settings/registerThirdComp';
 import { useSso } from '/@/hooks/web/useSso';
 // 注册online模块lib
 import { registerPackages } from '/@/utils/monorepo/registerPackages';
-
+import ElementPlus from 'element-plus' //2023.10.10
+import 'element-plus/dist/index.css'   //2023.10.10
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'//2023.10.10 element汉化
 // 在本地开发中引入的,以提高浏览器响应速度
 if (import.meta.env.DEV) {
   import('ant-design-vue/dist/antd.less');
@@ -27,7 +29,7 @@ async function bootstrap() {
 
   // 多语言配置,异步情况:语言文件可以从服务器端获得
   await setupI18n(app);
-
+   
   // 配置存储
   setupStore(app);
 
@@ -60,7 +62,8 @@ async function bootstrap() {
 
   // 当路由准备好时再执行挂载( https://next.router.vuejs.org/api/#isready)
   await router.isReady();
-
+  // 2023.10.10 使用element 
+  app.use(ElementPlus)
   // 挂载应用
   app.mount('#app', true);
 }
